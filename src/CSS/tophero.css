@@ -1,0 +1,63 @@
+.tophero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1fef4;
+  background-image: url("https://i.postimg.cc/SsZVYz5W/topbg-removebg-preview.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .rightside {
+    height: 100%;
+    width: 50%;
+    background-color: #f1fef4;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+    h1 {
+      font-size: 48px;
+    }
+    p {
+      text-align: left;
+    }
+    .contactBtn {
+      background-color: transparent;
+      color: #3bb75e;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .leftside {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: left;
+
+    p {
+      text-align: left;
+    }
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .tophero {
+    flex-direction: column;
+    height: max-content;
+    align-items: flex-start;
+  }
+}
