@@ -10,14 +10,14 @@ const HeroCard = ({ content }) => {
       <div className="hero-right">
         <h1>{content?.Title}</h1>
         <p>{content?.TitleText}</p>
-        {/* <ul>
-          {content.List.map((item, index) => (
-            <li>{item?.index}</li>
+        <ul>
+          {content?.List?.map((listItem, index) => (
+            <li key={index}>{listItem}</li>
           ))}
-        </ul> */}
+        </ul>
         <h1>{content?.Subtitle}</h1>
         <p>{content?.Text}</p>
-        <p>{content.link}</p>
+        <p>{content?.link}</p>
       </div>
     </section>
   );

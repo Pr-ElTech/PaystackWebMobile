@@ -1,11 +1,10 @@
 .cardB {
   height: 95vh;
   width: 100%;
-  background-color: #f1fef4;
   display: flex;
 
   .hero-left {
-    width: 45%;
+    width: 50%;
     height: 100%;
   }
 
@@ -18,13 +17,13 @@
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    padding: 10px;
+    gap: 20px;
 
     ul {
       height: 25%;
-      gap: 5px;
+      gap: 10px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -36,34 +35,33 @@
 
 @media (max-width: 1000px) {
   .cardB {
-    height: 95vh;
+    height: max-content;
     width: 100%;
-    background-color: #f1fef4;
     display: flex;
+    margin-bottom: 20px;
     flex-direction: column;
 
     .hero-left {
       width: 100%;
-      height: 100%;
+      height: 100vh;
     }
 
     .hero-left img {
       width: 100%;
-      height: 100%;
+      height: 80%;
     }
     .hero-right {
-      height: 100%;
+      height: auto;
       width: 100%;
       display: flex;
+      justify-content: center;
       flex-direction: column;
-      gap: 10px;
 
       ul {
-        height: 18%;
         gap: 5px;
+        height: 120px;
         width: 100%;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         list-style-type: none;
       }
